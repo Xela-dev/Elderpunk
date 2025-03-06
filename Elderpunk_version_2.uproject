@@ -5,12 +5,9 @@
 	"Description": "",
 	"Modules": [
 		{
-			"Name": "GrandmamShooter",
+			"Name": "Elderpunk_version_2",
 			"Type": "Runtime",
-			"LoadingPhase": "Default",
-			"AdditionalDependencies": [
-				"Engine"
-			]
+			"LoadingPhase": "Default"
 		}
 	],
 	"Plugins": [
@@ -21,5 +18,8 @@
 				"Editor"
 			]
 		}
+	],
+	"TargetPlatforms": [
+		"Windows"
 	]
 }
