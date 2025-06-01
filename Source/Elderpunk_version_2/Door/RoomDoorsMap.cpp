@@ -2,11 +2,11 @@
 
 FDoor ARoomDoorsMap::GetRandomRoomDoors(EDirection exitDirection)
 {
-	int maxRandom = RoomDoors.Num() - 1;
+	int maxRandom = RoomDoors.Num();
 	int rounds = 0, maxRounds = 20;
 	
-	while (rounds++ < maxRounds) {
-		int idRandomRoom = FMath::RandRange(0,maxRandom-1);
+	while (true) {
+		int idRandomRoom = FMath::RandRange(1,maxRandom-1);
 		EDirection reverseDir = mapReverseDirection[exitDirection];
 
 		if (idRandomRoom == idCurrentRoom) {
